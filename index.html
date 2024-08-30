@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appartement à Lyon - Votre escapade parfaite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/main.min.js'></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Top Navigation Menu -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#availability">Disponibilités</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#recommendations">Recommandations</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="language-switcher">
+                <button id="btn-fr" class="lang-btn">Français</button>
+                <button id="btn-en" class="lang-btn">English</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- French Version -->
+    <div id="content-fr">
+        <!-- Hero Section with Overlay -->
+        <section id="home" class="hero-banner">
+            <img src="images/Placeholder_flat_1.jpeg" alt="Appartement à Lyon">
+            <div class="hero-overlay">
+                <h1>Bienvenue à Lyon</h1>
+                <p>Votre appartement pour une escapade parfaite</p>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <section class="availability">
+                <h2>Disponibilités</h2>
+                <div id="calendar"></div>
+                <form id="reservation-form">
+                    <label for="dates">Sélectionnez vos dates :</label>
+                    <input type="text" id="dates" name="dates" placeholder="Choisissez vos dates">
+                    <button type="submit">Envoyer une demande de réservation</button>
+                </form>
+            </section>
+
+            <section class="weather">
+                <h3>Météo à Lyon</h3>
+                <div id="weather-widget-fr">
+                    <p>25°C, Ensoleillé</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="photos">
+            <h2>Photos de l'appartement</h2>
+            <div class="gallery">
+                <img src="images/Placeholder_flat_bedroom.jpg" alt="Chambre">
+                <img src="images/Placeholder_flat_kitchen.jpeg" alt="Cuisine">
+                <img src="images/Placeholder_flat_living_room.jpeg" alt="Salon">
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>Quoi faire à Lyon</h2>
+            <div class="recommendations-content">
+                <div class="recommendation">
+                    <img src="images/basilique_fourviere.png" alt="Basilique de Fourvière" class="recommendation-img">
+                    <h3>Basilique de Fourvière</h3>
+                    <p>Admirez la vue panoramique depuis cette magnifique basilique perchée sur les hauteurs de Lyon. Un incontournable pour tous les visiteurs.</p>
+                </div>
+                <div class="recommendation">
+                    <img src="images/parc_tete_dor.jpg" alt="Parc de la Tête d'Or" class="recommendation-img">
+                    <h3>Parc de la Tête d'Or</h3>
+                    <p>Profitez d'une promenade relaxante dans ce grand parc urbain, avec ses jardins botaniques, son lac et ses espaces verts.</p>
+                </div>
+                <div class="recommendation">
+                    <img src="images/bouchons_lyonnais.jpg" alt="Bouchons Lyonnais" class="recommendation-img">
+                    <h3>Bouchons Lyonnais</h3>
+                    <p>Dégustez la cuisine traditionnelle lyonnaise dans ces petits restaurants typiques, connus pour leurs plats savoureux et authentiques.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Appartement à Lyon</p>
+        </footer>
+    </div>
+
+    <!-- English Version -->
+    <div id="content-en" style="display:none;">
+        <!-- Hero Section with Overlay -->
+        <section id="home" class="hero-banner">
+            <img src="images/Placeholder_flat_1.jpeg" alt="Apartment in Lyon">
+            <div class="hero-overlay">
+                <h1>Welcome to Lyon</h1>
+                <p>Your apartment for a perfect getaway</p>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <section class="availability">
+                <h2>Availability</h2>
+                <div id="calendar"></div>
+                <form id="reservation-form">
+                    <label for="dates">Select your dates:</label>
+                    <input type="text" id="dates" name="dates" placeholder="Choose your dates">
+                    <button type="submit">Send Reservation Request</button>
+                </form>
+            </section>
+
+            <section class="weather">
+                <h3>Weather in Lyon</h3>
+                <div id="weather-widget-en">
+                    <p>25°C, Sunny</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="photos">
+            <h2>Apartment Photos</h2>
+            <div class="gallery">
+                <img src="images/Placeholder_flat_bedroom.jpg" alt="Bedroom">
+                <img src="images/Placeholder_flat_kitchen.jpeg" alt="Kitchen">
+                <img src="images/Placeholder_flat_living_room.jpeg" alt="Living Room">
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>Things to Do in Lyon</h2>
+            <div class="recommendations-content">
+                <div class="recommendation">
+                    <img src="images/basilique_fourviere.png" alt="Basilica of Fourvière" class="recommendation-img">
+                    <h3>Basilica of Fourvière</h3>
+                    <p>Enjoy the panoramic view from this magnificent basilica perched on the heights of Lyon. A must-see for all visitors.</p>
+                </div>
+                <div class="recommendation">
+                    <img src="images/parc_tete_dor.jpg" alt="Parc de la Tête d'Or" class="recommendation-img">
+                    <h3>Parc de la Tête d'Or</h3>
+                    <p>Take a relaxing walk in this large urban park with its botanical gardens, lake, and green spaces.</p>
+                </div>
+                <div class="recommendation">
+                    <img src="images/bouchons_lyonnais.jpg" alt="Bouchons Lyonnais" class="recommendation-img">
+                    <h3>Bouchons Lyonnais</h3>
+                    <p>Savor traditional Lyonnais cuisine in these small, typical restaurants known for their tasty and authentic dishes.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Apartment in Lyon</p>
+        </footer>
+    </div>
+</body>
+</html>

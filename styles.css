@@ -1,0 +1,227 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    margin: 0 6rem;
+    background: radial-gradient(circle, #b3d9ff, #e3f2fd);
+}
+
+/* Top Navigation Menu */
+.top-nav {
+    background-color: #b3d9ff; /* Bleu pastel clair */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.top-nav ul li a {
+    color: #003366; /* Bleu foncé pour le contraste */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.top-nav ul li a:hover {
+    color: #004080; /* Bleu plus foncé au survol */
+}
+
+.language-switcher {
+    display: flex;
+    gap: 1rem;
+}
+
+.lang-btn {
+    background-color: #a2c2e8; /* Bleu pastel pour les boutons */
+    color: #003366;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: #8cb3e0;
+    color: #fff;
+}
+
+/* Hero Banner with Overlay */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Couleur d'overlay légèrement moins sombre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Assure la responsivité */
+    margin: 2rem 0;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Availability Section */
+.availability {
+    flex: 1;
+    background-color: #e3f2fd; /* Bleu clair pastel */
+}
+
+.availability h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Weather Section */
+.weather {
+    flex: 1;
+    background-color: #b3e5fc; /* Bleu très clair pastel */
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Gallery Styling */
+.photos {
+    margin: 2rem 0;
+}
+
+.photos h2 {
+    text-align: center;
+    color: #333;
+}
+
+.photos .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Recommendations List */
+.recommendations {
+    background-color: #e3f2fd; /* Bleu clair pastel */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.recommendations h2 {
+    color: #003366; /* Bleu foncé pour le contraste */
+    text-align: center; /* Alignement central du titre */
+    margin-bottom: 1.5rem; /* Espace sous le titre */
+}
+
+/* Style for recommendations */
+.recommendations-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap; /* Pour les petits écrans */
+}
+
+.recommendation {
+    flex: 1 1 calc(33.333% - 1rem); /* Trois colonnes avec espace */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box; /* Assurer le respect des dimensions du conteneur */
+}
+
+.recommendation img {
+    width: 100%; /* Adapter à la largeur du conteneur */
+    height: auto; /* Conserver le ratio d'aspect de l'image */
+    border-radius: 8px;
+    object-fit: cover; /* Adapter l'image sans déformer */
+    max-height: 150px; /* Limiter la hauteur des images pour une meilleure disposition */
+    margin-bottom: 1rem; /* Espace entre l'image et la description */
+}
+
+.recommendation h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation p {
+    font-size: 1rem;
+}
+
+#calendar {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+form input {
+    width: calc(100% - 2rem); /* Ajuster la largeur */
+    margin: 0 1rem;
+}
